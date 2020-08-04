@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call Center</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/common.js"></script>
+    <script src="js/screen.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <div class="logo"><img src="img/logo.jpg" alt=""></div>
-        <div class="nav_main">
+    <iframe id="content_page" class="content_page_off" src="/pages/" frameborder="0"></iframe>
+    <div id="close" class="close_off" onclick="closesubpage()"> </div>
+    
+    
+    <div id="nav" class="nav">
+        <div id="logo" class="logo"></div>
+        <div id="nav_main" class="nav_main">
             <ul>           
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Our Service</a></li>
-                <li><a href="#">Why Choose Us</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a onclick="opensubpage('AboutUs.html')">About Us</a></li>
+                <li><a onclick="opensubpage('HowitWorks.html')">How It Works</a></li>
+                <li><a onclick="opensubpage('OurServices.html')">Our Service</a></li>
+                <li><a onclick="opensubpage('WhyChooseUs.html')">Why Choose Us</a></li>
+                <li><a onclick="opensubpage('FAQ.html')">FAQ</a></li>
+                <li><a onclick="opensubpage('ContactUs.html')">Contact Us</a></li>
             </ul>
         </div>        
     </div>
@@ -34,7 +40,7 @@
                     CC is your call center managed by people who have over 30 years of combined experience.
                 </P>
                 <div class="main_more">    
-                    <a href="#">...more</a>
+                    <a onclick="opensubpage('AboutUs.html')">...more</a>
                 </div>
             </div>
             
@@ -49,7 +55,7 @@
                     We bring to you your very own contact center providing core support to your business. 
                 </P>
                 <div class="main_more">
-                    <a href="#">...more</a>
+                    <a onclick="opensubpage('OurServices.html')">...more</a>
                 </div>
             </div>
             
@@ -64,7 +70,7 @@
                     We make it really simple for you. Just follow the process
                 </p>
                 <div class="main_more">
-                    <a href="#">...more</a>
+                    <a onclick="opensubpage('HowitWorks.html')">...more</a>
                 </div>
             </div>
             

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Center</title>
+    <link rel="stylesheet" media="screen and (min-width:970px)" href="css/pcStyle.css" >
+    <link rel="stylesheet" media="screen and (max-width:970px)" href="css/mbStyle.css" >
+    <script src="js/common.js"></script>
+    <script src="js/screen.js"></script>
+</head>
+<body>
+    
+    <div id="m_nav" class="m_nav" >
+        <div id="m_logo" class="m_logo"></div>
+        <div id="m_menu" class="m_menu" onclick="menu()"></div>
+    </div>
+    <div id="m_menu_list" class="m_menu_list">
+        <ul>           
+            <li><a onclick="opensubpage('AboutUs.html')">About Us</a></li>
+            <li><a onclick="opensubpage('HowitWorks.html')">How It Works</a></li>
+            <li><a onclick="opensubpage('OurServices.html')">Our Service</a></li>
+            <li><a onclick="opensubpage('WhyChooseUs.html')">Why Choose Us</a></li>
+            <li><a onclick="opensubpage('FAQ.html')">FAQ</a></li>
+            <li><a onclick="opensubpage('ContactUs.html')">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="nav" class="nav" >
+        <div id="logo" class="logo"></div>
+        <div id="nav_main" class="nav_main">
+            <ul>           
+                <li><a onclick="opensubpage('AboutUs.html')">About Us</a></li>
+                <li><a onclick="opensubpage('HowitWorks.html')">How It Works</a></li>
+                <li><a onclick="opensubpage('OurServices.html')">Our Service</a></li>
+                <li><a onclick="opensubpage('WhyChooseUs.html')">Why Choose Us</a></li>
+                <li><a onclick="opensubpage('FAQ.html')">FAQ</a></li>
+                <li><a onclick="opensubpage('ContactUs.html')">Contact Us</a></li>
+            </ul>
+        </div>        
+    </div>
+
+    <div id="div_iframe" class="div_iframe_off" >
+        <iframe id="content_page" class="content_page_off" src="/pages/" frameborder="0"></iframe>
+        <div id="close" class="close_off" onclick="closesubpage()"> </div>
+    </div>
+    
+    <div class="banner"></div>
+    <div class="main">
+        <div class="left">
+            <div class="main_title">
+                <img src="img/whoweare.PNG" alt="">
+                <p>WHO WE ARE</p>
+            </div>
+            <div class="main_content">
+                <P>
+                    CC is your call center managed by people who have over 30 years of combined experience.
+                </P>
+                <div class="main_more">    
+                    <a onclick="opensubpage('AboutUs.html')">...more</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="middle">
+            <div class="main_title">
+                <img src="img/whatwedo.PNG" alt="">
+                <p>WHAT WE DO</p>
+            </div>
+            <div class="main_content">
+                <P>
+                    We bring to you your very own contact center providing core support to your business. 
+                </P>
+                <div class="main_more">
+                    <a onclick="opensubpage('OurServices.html')">...more</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="right">
+            <div class="main_title">
+                <img src="img/howwework.PNG" alt="">
+                <p>HOW WE WORK</p>
+            </div>
+            <div class="main_content">
+                <P>
+                    We make it really simple for you. Just follow the process
+                </p>
+                <div class="main_more">
+                    <a onclick="opensubpage('HowitWorks.html')">...more</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>Copyright©2018. Powered by CallCentre Limited</p>
+    </footer>
+</body>
+</html>

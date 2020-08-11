@@ -8,3 +8,14 @@ function closesubpage(){
 	document.getElementById('close').className='close_off';		
 	document.getElementById('content_page').src='/pages/';
 }
+
+function menu(){
+    if(document.getElementById('nav_main').className == 'nav_main'){
+        document.getElementById('nav_main').className='nav_main_on';
+    }
+    else{
+        document.getElementById('nav_main').className='nav_main';
+    }
+    
+
+}

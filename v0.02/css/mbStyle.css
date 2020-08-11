@@ -10,25 +10,44 @@ body{
 a {text-decoration: none; cursor: pointer}
 ul {list-style: none;}
 
-.nav {
+/* .nav {
     visibility: hidden;
 }
 .nav_off {
     visibility: hidden;
-}
+} */
 
-.m_nav {
+.nav {
     position: fixed;
     width: 100%;
+    height: 60px;
+    background: #fff
 }
-.m_nav .m_logo {
+.nav_off {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #fff
+}
+
+.nav .logo {
     float: left;
     width: 100px;
     height: 60px;
     background-image: url(../img/logo.jpg);  
     background-size: 100px 60px;
 }
-.m_nav .m_menu {
+
+.logo_off {
+    float: left;
+    width: 100px;
+    height: 60px;
+    background-image: url(../img/logo.jpg);  
+    background-size: 100px 60px;
+}
+
+.nav .m_menu, 
+.nav_off .m_menu {
     float: right;
     width: 50px;
     height: 50px;
@@ -39,16 +58,21 @@ ul {list-style: none;}
     margin: 5px;
 }
 
-.m_menu_list_off {
+.nav_main {
     visibility: hidden;
 }
-.m_menu_list {
+
+.nav_main_off {
+    visibility: hidden;
+}
+
+.nav_main_on {
     position: fixed;
     top: 60px;
     width: 100%;
     background-color: #fff;
 }
-.m_menu_list ul li {
+.nav_main_on ul li {
     height: 50px;
     text-align: center;
     line-height: 50px;
@@ -56,13 +80,13 @@ ul {list-style: none;}
     background-color: #eee;
     font-size: 14px;
 }
-.m_menu_list ul li:first-child {
+.nav_main_on ul li:first-child {
     margin-top: 0;
 }
-.m_menu_list ul li:last-child {
+.nav_main_on ul li:last-child {
     margin-bottom: 0;
 }
-.m_menu_list ul li a {
+.nav_main_on ul li a {
     display: block;
     width: 100%;
     height: 100%;
@@ -109,13 +133,13 @@ ul {list-style: none;}
 
 .banner {
     width: 100%;
-    height: 600px;
+    height: 300px;
 }
 .main {
     background-color: #eee;
     width: 100%;
     height: auto;
-    padding: 15px 0;
+    padding: 1px 0;
 }
 .main .left, .middle, .right {
     background-color: #fff;
